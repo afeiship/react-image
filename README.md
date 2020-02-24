@@ -12,10 +12,10 @@ npm update @feizheng/react-image
 ```
 
 ## properties
-| Name      | Type   | Default | Description                           |
-| --------- | ------ | ------- | ------------------------------------- |
-| className | string | -       | The extended className for component. |
-| objectFit | enum   | 'cover' | Default value.                        |
+| Name      | Type   | Default | Description                                                    |
+| --------- | ------ | ------- | -------------------------------------------------------------- |
+| className | string | -       | The extended className for component.                          |
+| objectFit | enum   | 'cover' | How an <img> or <video> should be resized to fit its container |
 
 
 ## usage

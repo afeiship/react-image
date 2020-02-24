@@ -17,7 +17,7 @@ export default class ReactImage extends Component {
      */
     className: PropTypes.string,
     /**
-     * Default value.
+     * How an <img> or <video> should be resized to fit its container
      */
     objectFit: PropTypes.oneOf(['cover', 'contain', 'fill', 'inherit', 'none'])
   };
