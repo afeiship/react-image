@@ -17,9 +17,8 @@ __GENERATE_DOCS__
 ## usage
 1. import css
   ```scss
-  @import "~@jswork/react-image/dist/style.css";
-
-  // or use sass
+  @import "~@jswork/wsui-frame-wrapper/dist/index.scss";
+  @import "~@jswork/react-figure/dist/style.scss";
   @import "~@jswork/react-image/dist/style.scss";
 
   // customize your styles:
