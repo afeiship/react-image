@@ -1,45 +1,48 @@
 # react-image
 > Better image for react.
 
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
+
 ## installation
 ```shell
-npm install -S @feizheng/react-image
-```
-
-## update
-```shell
-npm update @feizheng/react-image
+npm install -S @jswork/react-image
 ```
 
 ## properties
-| Name      | Type   | Default | Description                                                    |
-| --------- | ------ | ------- | -------------------------------------------------------------- |
-| className | string | -       | The extended className for component.                          |
-| objectFit | enum   | 'cover' | How an <img> or <video> should be resized to fit its container |
+| Name      | Type   | Required | Default | Description                                                    |
+| --------- | ------ | -------- | ------- | -------------------------------------------------------------- |
+| className | string | false    | -       | The extended className for component.                          |
+| objectFit | enum   | false    | 'cover' | How an <img> or <video> should be resized to fit its container |
 
 
 ## usage
 1. import css
   ```scss
-  @import "~@feizheng/webkit-sassui-frame-wrapper/dist/index.scss";
-  @import "~@feizheng/react-figure/dist/style.scss";
-  @import "~@feizheng/react-image/dist/style.scss";
+  @import "~@jswork/react-image/dist/style.css";
+
+  // or use sass
+  @import "~@jswork/react-image/dist/style.scss";
 
   // customize your styles:
   $react-image-options: ()
   ```
 2. import js
   ```js
-  import ReactImage from '@feizheng/react-image';
-  import ReactDOM from 'react-dom';
+  import ReactDemokit from '@jswork/react-demokit';
   import React from 'react';
+  import ReactDOM from 'react-dom';
+  import ReactImage from '@jswork/react-image';
   import './assets/style.scss';
 
   class App extends React.Component {
-    componentDidMount() {}
     render() {
       return (
-        <div className="app-container">
+        <ReactDemokit
+          className="p-3 app-container"
+          url="https://github.com/afeiship/react-image">
           <p>
             <ReactImage
               style={{ width: 400, height: 200 }}
@@ -53,7 +56,7 @@ npm update @feizheng/react-image
               src="https://tva1.sinaimg.cn/large/006tNbRwly1gapa83qtc2j31670u0wsl.jpg"
             />
           </p>
-        </div>
+        </ReactDemokit>
       );
     }
   }
@@ -64,3 +67,19 @@ npm update @feizheng/react-image
 
 ## documentation
 - https://afeiship.github.io/react-image/
+
+
+## license
+Code released under [the MIT license](https://github.com/afeiship/react-image/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@jswork/react-image
+[version-url]: https://npmjs.org/package/@jswork/react-image
+
+[license-image]: https://img.shields.io/npm/l/@jswork/react-image
+[license-url]: https://github.com/afeiship/react-image/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/react-image
+[size-url]: https://github.com/afeiship/react-image/blob/master/dist/react-image.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/react-image
+[download-url]: https://www.npmjs.com/package/@jswork/react-image

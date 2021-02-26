@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
-import ReactFigure from '@feizheng/react-figure';
-import objectAssign from 'object-assign';
+import ReactFigure from '@jswork/react-figure';
 
 const CLASS_NAME = 'react-image';
 
@@ -19,7 +16,13 @@ export default class ReactImage extends Component {
     /**
      * How an <img> or <video> should be resized to fit its container
      */
-    objectFit: PropTypes.oneOf(['cover', 'contain', 'fill', 'inherit', 'none'])
+    objectFit: PropTypes.oneOf([
+      'cover',
+      'contain',
+      'fill',
+      'inherit',
+      'none'
+    ])
   };
 
   static defaultProps = {
@@ -33,8 +36,9 @@ export default class ReactImage extends Component {
         data-component={CLASS_NAME}
         data-object-fit={objectFit}
         className={classNames(CLASS_NAME, className)}>
-        <img {...props} />
+        <img alt="" {...props} />
       </ReactFigure>
     );
   }
 }
+
